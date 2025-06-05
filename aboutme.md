@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Summer Internship Goals
+title: Summer Internship Goals
+subtitle: Summer 2025
 ---
 
 <style>
