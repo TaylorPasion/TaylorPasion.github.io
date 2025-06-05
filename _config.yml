@@ -22,7 +22,7 @@ author: Taylor Pasion
 navbar-links:
   About Me: "aboutme"
   Projects:
-    - Week 1: "/week_1.md"
+    - Week 1: "/blob/master/week_1.md"
     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
 
