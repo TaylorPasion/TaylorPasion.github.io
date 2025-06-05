@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Summer Internship Goals
+title: Hokulani Internship Goals
 subtitle: Summer 2025
 ---
 
