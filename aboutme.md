@@ -1,16 +1,58 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Summer Internship Goals
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+<style>
+  .week-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #008AFF;
+    margin-top: 1.2em;
+  }
+  .goal-section {
+    background-color: #F0F8FF;
+    border-left: 6px solid #008AFF;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+</style>
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+<div class="goal-section">
+  <div class="week-title">Week 1: Introduction</div>
+  <ul>
+    <li>Learning fundamentals of Python</li>
+    <li>Creating GitHub website</li>
+    <li>Working with NBA dataset</li>
+    <li>Basic data analysis</li>
+  </ul>
+</div>
 
-What else do you need?
+<div class="goal-section">
+  <div class="week-title">Week 2: Decision Trees, Random Forests, Linear Regression</div>
+  <ul>
+    <li>Dataset: TBD</li>
+    <li>Train models with multiple machine learning tools</li>
+  </ul>
+</div>
 
-### My story
+<div class="goal-section">
+  <div class="week-title">Week 3: Large Language Models and Chatbots</div>
+  <ul>
+    <li>Build an LLM-powered chatbot</li>
+    <li>Use API keys to access model endpoints</li>
+  </ul>
+</div>
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<div class="goal-section">
+  <div class="week-title">Week 4: Neural Networks</div>
+  <ul>
+    <li>Train and evaluate a neural network</li>
+  </ul>
+</div>
