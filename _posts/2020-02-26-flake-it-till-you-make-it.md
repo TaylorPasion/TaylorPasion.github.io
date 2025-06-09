@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Internship Log – June 5, 2025"
-subtitle: "CLD TEAMS Daily Log – Week 1 Continued"
+subtitle: "Week 1 Continued - Analyzing Data"
 date: 2025-06-05
 ---
 
