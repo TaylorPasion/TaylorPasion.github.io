@@ -1,18 +1,103 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-tags: [books, test]
-author: Sharon Smith and Barry Simpson
+title: "Internship Log – June 5, 2025"
+subtitle: "CLD TEAMS Daily Log – Week 1 Continued"
+date: 2025-06-05
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+<style>
+  .log-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+  }
+  .log-table th, .log-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  .log-table th {
+    background-color: #f2f2f2;
+  }
+  .rating-table {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .rating-table th {
+    background-color: #E3F2FD;
+  }
+  .section-title {
+    font-size: 1.2em;
+    color: #008AFF;
+    margin-top: 1.5em;
+  }
+  blockquote {
+    background: #f9f9f9;
+    border-left: 6px solid #008AFF;
+    padding: 10px 15px;
+    font-style: italic;
+  }
+</style>
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+### 📝 Internship Details
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
+<table class="log-table">
+  <tr><th>Student Name</th><td>Taylor Pasion</td></tr>
+  <tr><th>Date</th><td>June 5, 2025 (Thursday)</td></tr>
+  <tr><th>Start Time</th><td>10:00 AM</td></tr>
+  <tr><th>End Time</th><td>12:00 PM</td></tr>
+  <tr><th>Break</th><td>N/A</td></tr>
+  <tr><th>Total Hours</th><td>2</td></tr>
+</table>
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+---
+
+### ✅ Self Ratings – CLD TEAMS Attributes
+
+<table class="log-table rating-table">
+  <tr><th>Attribute</th><th>Rating (1–Fair, 2–Average, 3–Good)</th></tr>
+  <tr><td>Overall Effort</td><td>3</td></tr>
+  <tr><td>Interest in Duties/Tasks</td><td>3</td></tr>
+  <tr><td>Time Management</td><td>3</td></tr>
+  <tr><td>Quality of Work Completed</td><td>3</td></tr>
+  <tr><td>Attitude</td><td>3</td></tr>
+  <tr><td>Teamwork</td><td>3</td></tr>
+  <tr><td>Punctuality</td><td>3</td></tr>
+</table>
+
+---
+
+### ✍️ Reflection
+
+#### What did you work on today and what did you learn?
+
+<blockquote>
+We worked on changing our website to reflect what we were doing. I learned about utilizing ChatGPT to make tasks easier and more efficient.
+</blockquote>
+
+#### What feedback did you get from your mentor today?
+
+<blockquote>
+The feedback was positive. We discussed the website and ways to personalize it and make it my own.
+</blockquote>
+
+#### Describe any challenges from today’s work that you need assistance with:
+
+<blockquote>
+One challenge was remembering the small details in code — even tiny syntax mistakes can lead to errors.
+</blockquote>
+
+#### Describe any information or support you may need to complete your work:
+
+<blockquote>
+All information and support should be provided by my mentor.
+</blockquote>
+
+#### What will you be working on the next internship day?
+
+<blockquote>
+Next time, we’ll continue working with data sets and begin exploring decision trees and other machine learning techniques.
+</blockquote>
