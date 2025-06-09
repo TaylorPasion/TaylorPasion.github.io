@@ -1,100 +1,91 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
-mathjax: true
-author: Bill Smith
+title: "Internship Log – June 3, 2025"
+subtitle: "Week 1 – GitHub Setup & Python Exploration"
+date: 2025-06-03
 ---
 
-{: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+<style>
+  .log-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+  }
+  .log-table th, .log-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  .log-table th {
+    background-color: #f2f2f2;
+  }
+  .section-title {
+    font-size: 1.2em;
+    color: #008AFF;
+    margin-top: 1.5em;
+  }
+  .rating-table {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .rating-table th {
+    background-color: #E3F2FD;
+  }
+</style>
 
-**Here is some bold text**
+### 📅 Internship Details
 
-## Here is a secondary heading
+<table class="log-table">
+  <tr><th>Student Name</th><td>Taylor Pasion</td></tr>
+  <tr><th>Date</th><td>June 3, 2025 (Tuesday)</td></tr>
+  <tr><th>Start Time</th><td>10:00 AM</td></tr>
+  <tr><th>End Time</th><td>12:00 PM</td></tr>
+  <tr><th>Break</th><td>N/A</td></tr>
+  <tr><th>Total Hours</th><td>2</td></tr>
+</table>
 
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
+---
 
-Here's a table:
+### ⭐ Student Daily Self-Ratings
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+<table class="log-table rating-table">
+  <tr><th>CLD TEAMS Attribute</th><th>Rating (1–Fair, 2–Average, 3–Good)</th></tr>
+  <tr><td>Overall Effort</td><td>3</td></tr>
+  <tr><td>Interest in Duties/Tasks</td><td>3</td></tr>
+  <tr><td>Time Management</td><td>3</td></tr>
+  <tr><td>Quality of Work</td><td>3</td></tr>
+  <tr><td>Attitude</td><td>3</td></tr>
+  <tr><td>Teamwork</td><td>3</td></tr>
+  <tr><td>Punctuality</td><td>3</td></tr>
+</table>
 
-You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+---
 
-How about a yummy crepe?
+### ✍️ Reflection
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
+#### What did you work on today and what did you learn?
 
-It can also be centered!
+> Today, we worked on creating my GitHub website and also analyzing a data sample. I learned about different Python coding tools.
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
+#### What feedback did you get from your mentor today?
 
-Here's a code chunk:
+> The feedback was positive, and we mostly talked about our plan for the rest of the internship and how we will be doing little projects.
 
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
+#### Describe any challenges from today’s work that you need assistance with:
 
-And here is the same code with syntax highlighting:
+> Some challenges included using the Dell laptop, as I’m more used to working with Mac. Another problem was troubleshooting Python and the GitHub website.
 
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
+#### Describe any information or support you may need to complete your work:
 
-And here is the same code yet again but with line numbers:
+> All information and support should be provided by my mentor.
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
+#### What will you be working on the next internship day?
 
-## Boxes
-You can add notification, warning and error boxes like this:
+> Next internship day, we will be working with NBA data and comparing different things.
 
-### Notification
+---
 
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
-
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
-
-<details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
-</details>
+Let me know if you’d like a version with a sidebar summary, embedded images, or daily logs in timeline format.
