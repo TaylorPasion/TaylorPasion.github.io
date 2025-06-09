@@ -87,5 +87,3 @@ date: 2025-06-03
 > Next internship day, we will be working with NBA data and comparing different things.
 
 ---
-
-Let me know if you’d like a version with a sidebar summary, embedded images, or daily logs in timeline format.
