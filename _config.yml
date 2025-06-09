@@ -20,11 +20,11 @@ author: Taylor Pasion
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  Hokulani Internship: "aboutme"
   Projects:
     - Week 1: "/week_1/"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  GitHub Home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
