@@ -41,7 +41,7 @@ In this week’s analysis, we explored the relationship between **Field Goals At
 </div>
 
 <p align="center">
-  <img src="/assets/img/top5_and_bottom5_scoring_teams.png" alt="Top 5 vs. Bottom 5 Scoring Teams" width="600" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="/assets/img/top5_and_bottom5_scoring_teams.png" alt="Top 5 vs. Bottom 5 Scoring Teams" width="1200" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
 
 ---
@@ -58,7 +58,7 @@ We zoomed in on the **highest scoring team (Sacramento)** and the **lowest (Miam
 </div>
 
 <p align="center">
-  <img src="/assets/img/highest_lowest_scoring_teams.png" alt="Sacramento vs. Miami FG Analysis" width="600" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="/assets/img/highest_lowest_scoring_teams.png" alt="Sacramento vs. Miami FG Analysis" width="1200" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
 
 ---
