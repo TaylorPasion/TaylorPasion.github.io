@@ -39,7 +39,7 @@ subtitle: Summer 2025
 </style>
 
 <div class="goal-section week-1">
-  <div class="week-title">🌺 Week 1: Introduction</div>
+  <div class="week-title">ℹ️ Week 1: Introduction</div>
   <ul>
     <li>Learning fundamentals of Python</li>
     <li>Creating GitHub website</li>
@@ -49,7 +49,7 @@ subtitle: Summer 2025
 </div>
 
 <div class="goal-section week-2">
-  <div class="week-title">🌴 Week 2: Decision Trees, Random Forests, Linear Regression</div>
+  <div class="week-title">💻 Week 2: Decision Trees, Random Forests, Linear Regression</div>
   <ul>
     <li>Dataset: TBD</li>
     <li>Train models with multiple machine learning tools</li>
@@ -57,7 +57,7 @@ subtitle: Summer 2025
 </div>
 
 <div class="goal-section week-3">
-  <div class="week-title">🌈 Week 3: Large Language Models and Chatbots</div>
+  <div class="week-title">🤖 Week 3: Large Language Models and Chatbots</div>
   <ul>
     <li>Build an LLM-powered chatbot</li>
     <li>Use API keys to access model endpoints</li>
@@ -65,7 +65,7 @@ subtitle: Summer 2025
 </div>
 
 <div class="goal-section week-4">
-  <div class="week-title">🌊 Week 4: Neural Networks</div>
+  <div class="week-title">🌐 Week 4: Neural Networks</div>
   <ul>
     <li>Train and evaluate a neural network</li>
   </ul>
