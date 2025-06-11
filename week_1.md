@@ -42,14 +42,11 @@ I added a dedicated page to outline my weekly internship goals and progress.
 
 ### 4️⃣ Created a Weekly Project Page Layout
 
-I organized project content into week-by-week blog posts/pages for clarity and tracking.
+I organized all internship work into separate pages for each week, making it easier to track progress and structure content.
 
 <p align="center">
-  <p align="center">
-  <img src="https://github.com/user-attachments/assets/4ee9a799-4035-40c5-9875-2ec4f0314c0a" alt="Internship Goals Page" width="700" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-</p> alt="Internship Goals Page" width="700" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="https://github.com/user-attachments/assets/2f1d5617-decf-4407-ac9e-8acff3201c4b" alt="Project Layout Page Screenshot" width="700" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
-
 
 
 ---
