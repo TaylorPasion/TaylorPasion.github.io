@@ -51,7 +51,7 @@ subtitle: Summer 2025
 <div class="goal-section week-2">
   <div class="week-title">💻 Week 2: Decision Trees, Random Forests, Linear Regression</div>
   <ul>
-    <li>Dataset: TBD</li>
+    <li>Dataset: NBA Data</li>
     <li>Train models with multiple machine learning tools</li>
   </ul>
 </div>
