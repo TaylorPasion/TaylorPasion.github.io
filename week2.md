@@ -72,3 +72,32 @@ What role do opponents play in limiting team performance?
 </blockquote>
 
 ---
+
+## 🏀 NBA Playoff Prediction Using Decision Trees
+
+<p align="center">
+  <img src="/assets/img/NBA_Playoffs_DT.png" alt="NBA Teams Decision Tree" width="1200" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
+
+To explore what factors contributed to NBA teams making the playoffs, we built a **decision tree classifier** using various team statistics such as:
+
+- Plus/Minus
+- Points
+- Field Goals Attempted (FGA)
+- Assists
+- Turnovers
+- Blocks
+
+---
+
+### 📊 Key Findings
+
+We found that three features were particularly predictive of whether a team would make the playoffs:
+
+- 🏹 **FGA (Field Goals Attempted)**  
+- 🔁 **Turnovers**  
+- ⛔ **Blocks**
+
+These stats played a significant role in determining postseason eligibility and provided insight into both offensive efficiency and defensive strength.
+
+---
