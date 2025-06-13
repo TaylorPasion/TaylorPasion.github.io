@@ -77,7 +77,37 @@ What role do opponents play in limiting team performance?
 
 <p align="center">
   <img src="/assets/img/nba_playoffs_dt_new.png" alt="NBA Teams Decision Tree" width="1200" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-</p>
+</p>   
+
+## 🏆 2022–23 NBA Playoff Status Summary
+
+<style>
+  .team-box {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 1.05em;
+  }
+  .made {
+    background-color: #e6f9ec;
+    border-left: 6px solid #4CAF50;
+  }
+  .missed {
+    background-color: #fcebea;
+    border-left: 6px solid #f44336;
+  }
+</style>
+
+<div class="team-box made">
+  <strong>✅ Teams That Made the Playoffs:</strong><br>
+  <code>BKN</code>, <code>BOS</code>, <code>CHI</code>, <code>CLE</code>, <code>DEN</code>, <code>GSW</code>, <code>LAC</code>, <code>LAL</code>, <code>MIA</code>, <code>MIL</code>, <code>MIN</code>, <code>NYK</code>, <code>PHI</code>, <code>PHX</code>, <code>SAC</code>, <code>OKC</code>
+</div>
+
+<div class="team-box missed">
+  <strong>❌ Teams That Did Not Make the Playoffs:</strong><br>
+  <code>ATL</code>, <code>MEM</code>, <code>TOR</code>, <code>CHA</code>, <code>DAL</code>, <code>DET</code>, <code>HOU</code>, <code>IND</code>, <code>ORL</code>, <code>POR</code>, <code>SAS</code>, <code>UTA</code>, <code>WAS</code>, <code>NOP</code>
+</div>
+
 
 To explore what factors contributed to NBA teams making the playoffs, we built a **decision tree classifier** using various team statistics such as:
 
