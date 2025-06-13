@@ -172,6 +172,29 @@ To better understand the variance across NBA team statistics, we used **Principa
 
 ## 📊 Key Findings
 
+<style>
+  .highlight-box {
+    background-color: #f0f8ff;
+    border-left: 6px solid #42A5F5;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    font-size: 1.05em;
+  }
+  .analysis-box {
+    background-color: #fffbe7;
+    border-left: 6px solid #f9a825;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    font-size: 1.03em;
+  }
+  .highlight-box ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+</style>
+
 <div class="highlight-box">
   We found that three features were particularly predictive of whether a team would make the playoffs:
 
@@ -181,5 +204,16 @@ To better understand the variance across NBA team statistics, we used **Principa
     <li>🔥 <strong>Points</strong></li>
   </ul>
 
-  These stats played a significant role in determining postseason eligibility and provided insight into both offensive efficiency and defensive strength.
+  These stats played a significant role in determining postseason eligibility and offered insight into both offensive efficiency and defensive strength.
 </div>
+
+<div class="analysis-box">
+  It’s interesting how <strong>rebounds</strong> and <strong>FGA</strong> are both strong predictors — teams that take more shots naturally generate more rebounding opportunities. <br><br>
+  We observed a similar relationship in our <strong>PCA</strong> results:
+  
+  - 📈 <strong>Points</strong> correlate closely with <strong>Assists</strong>
+  - 🎯 <strong>Field Goal Percentage</strong> aligns with <strong>3PT FG Percentage</strong>
+
+  Most playoff teams clustered strongly around <strong>PCA Component 1</strong>, suggesting that this component captures the offensive and scoring efficiency that defines postseason success.
+</div>
+
