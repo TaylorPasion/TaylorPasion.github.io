@@ -210,6 +210,9 @@ To better understand the variance across NBA team statistics, we used **Principa
 <div class="analysis-box">
   It’s interesting how <strong>rebounds</strong> and <strong>FGA</strong> are both strong predictors — teams that take more shots naturally generate more rebounding opportunities. <br><br>
   We observed a similar relationship in our <strong>PCA</strong> results:
+
+
+  
   
   - 📈 <strong>Points</strong> correlate closely with <strong>Assists</strong>
   - 🎯 <strong>Field Goal Percentage</strong> aligns with <strong>3PT FG Percentage</strong>
@@ -217,3 +220,26 @@ To better understand the variance across NBA team statistics, we used **Principa
   Most playoff teams clustered strongly around <strong>PCA Component 1</strong>, suggesting that this component captures the offensive and scoring efficiency that defines postseason success.
 </div>
 
+## 🤖 Support Vector Classifier (SVC) Visualization
+
+We applied a **Support Vector Classifier (SVC)** model to evaluate whether team performance metrics could be used to predict playoff qualification. The SVC model works by identifying an optimal boundary that separates teams based on statistical differences.
+
+<p align="center">
+  <img src="/assets/img/SVC.png" alt="Support Vector Classifier Plot" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
+
+<style>
+  .svc-box {
+    background-color: #f0f8ff;
+    border-left: 6px solid #42A5F5;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    font-size: 1.03em;
+  }
+</style>
+
+<div class="svc-box">
+  The SVC model was trained using our **PCA-transformed data**, allowing it to find a classification boundary in a reduced feature space. This approach leveraged the variance captured in the PCA components to distinguish between playoff and non-playoff teams.<br><br>
+  🔍 The visualization above illustrates how well the classifier separated the two groups — reinforcing trends we saw in both the decision tree and raw PCA results.
+</div>
