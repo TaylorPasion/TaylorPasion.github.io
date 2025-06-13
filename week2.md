@@ -76,7 +76,7 @@ What role do opponents play in limiting team performance?
 ## 🏀 NBA Playoff Prediction Using Decision Trees
 
 <p align="center">
-  <img src="/assets/img/NBA_Playoffs_DT.png" alt="NBA Teams Decision Tree" width="1200" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="/assets/img/nba_playoffs_dt_new.png" alt="NBA Teams Decision Tree" width="1200" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
 
 To explore what factors contributed to NBA teams making the playoffs, we built a **decision tree classifier** using various team statistics such as:
