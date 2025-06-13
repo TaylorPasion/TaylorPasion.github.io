@@ -155,14 +155,31 @@ To better understand the variance across NBA team statistics, we used **Principa
 </div>
 
 
-### 📊 Key Findings
+<style>
+  .highlight-box {
+    background-color: #f0f8ff;
+    border-left: 6px solid #42A5F5;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    font-size: 1.05em;
+  }
+  .highlight-box ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+</style>
 
-We found that three features were particularly predictive of whether a team would make the playoffs:
+## 📊 Key Findings
 
-- 🏹 **FGA (Field Goals Attempted)**  
-- 🔁 **Turnovers**  
-- ⛔ **Blocks**
+<div class="highlight-box">
+  We found that three features were particularly predictive of whether a team would make the playoffs:
 
-These stats played a significant role in determining postseason eligibility and provided insight into both offensive efficiency and defensive strength.
+  <ul>
+    <li>🏀 <strong>FGA (Field Goals Attempted)</strong></li>
+    <li>🔄 <strong>Rebounds</strong></li>
+    <li>🔥 <strong>Points</strong></li>
+  </ul>
 
----
+  These stats played a significant role in determining postseason eligibility and provided insight into both offensive efficiency and defensive strength.
+</div>
