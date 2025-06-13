@@ -120,6 +120,41 @@ To explore what factors contributed to NBA teams making the playoffs, we built a
 
 ---
 
+## 🧠 Principal Component Analysis (PCA)
+
+To better understand the variance across NBA team statistics, we used **Principal Component Analysis (PCA)**. Below are visualizations of the PCA results:
+
+- The **bar plot** shows how much variance each principal component explains.
+- The **scatter plot** shows how teams are distributed in PCA space, highlighting clusters and outliers.
+
+<style>
+  .pca-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1em;
+  }
+  .pca-img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 100%;
+    height: auto;
+    width: 48%;
+  }
+  @media (max-width: 768px) {
+    .pca-img {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="pca-container">
+  <img src="/assets/img/pca_bar.png" alt="PCA Bar Plot" class="pca-img" />
+  <img src="/assets/img/PCA.png" alt="PCA Scatter Plot" class="pca-img" />
+</div>
+
+
 ### 📊 Key Findings
 
 We found that three features were particularly predictive of whether a team would make the playoffs:
