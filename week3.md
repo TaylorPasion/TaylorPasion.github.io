@@ -14,7 +14,22 @@ To explore how transformer models operate and to gain practical experience in bu
 
 ---
 
+### 🔗 Attention Mechanism
+
+The image below shows an attention map, which visualizes how correlated each word is to the others in a sentence.  
+This is a core mechanism in transformer models—it allows the model to weigh the importance of each word relative to every other word.
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/676a431e-04d7-46cd-abc2-f9a86a624e86" alt="Transformer Model Architecture" width="400" style="margin: 10px;">
-  <img src="https://github.com/user-attachments/assets/b7726e92-bbf8-4500-b049-e0c1c8fbbf41" alt="Training Visualization" width="800" style="margin: 10px;">
+  <img src="https://github.com/user-attachments/assets/676a431e-04d7-46cd-abc2-f9a86a624e86" alt="Attention Map" width="600">
+</p>
+
+---
+
+### 💬 Conversation Summarization
+
+Below is an example of how the model was trained using real conversations.  
+It shows how the transformer learns to summarize long text inputs into concise outputs.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b7726e92-bbf8-4500-b049-e0c1c8fbbf41" alt="Conversation Summarization Training" width="900">
 </p>
