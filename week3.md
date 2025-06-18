@@ -33,3 +33,9 @@ It shows how the transformer learns to summarize long text inputs into concise o
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b7726e92-bbf8-4500-b049-e0c1c8fbbf41" alt="Conversation Summarization Training" width="900">
 </p>
+
+
+## 📊 Interactive Plot
+
+<iframe src="/assets/img/pokemon_plot.html" width="100%" height="600" frameborder="0"></iframe>
+
