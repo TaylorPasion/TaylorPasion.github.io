@@ -35,7 +35,14 @@ It shows how the transformer learns to summarize long text inputs into concise o
 </p>
 
 
-## 📊 Interactive Plot
+## 📊 Pokémon Stat Embedding Visualization
 
-<iframe src="/assets/img/pokemon_plot.html" width="100%" height="600" frameborder="0"></iframe>
+<iframe src="/assets/img/pokemon_plot.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
 
+### 🧬 About the Plot
+
+We created embeddings for Pokémon based on core stats such as **HP**, **Attack**, **Defense**, and **Speed**. This data was pulled using a public Pokémon API and visualized using a dimensionality reduction technique called **t-SNE**.
+
+Unlike other projection methods that may impose artificial structure, **t-SNE** preserves the local relationships in the data, giving us a more authentic view of how Pokémon compare based on their attributes.
+
+Each point in the plot represents a single Pokémon, and you can hover over each point to view its **types**, **abilities**, and **evolution line**.
