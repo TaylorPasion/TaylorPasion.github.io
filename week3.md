@@ -68,3 +68,19 @@ Each point in the plot represents a single Pokémon, and you can hover over each
 - In this network, each **node** is a Pokémon, and **edges connect Pokémon that share the same habitat** (e.g., Grassland, Urban, Water’s Edge, Cave, Mountain).
 - This layout produces much **clearer clusters**, allowing us to identify tight communities of Pokémon that live in similar environments.
 - We applied **Louvain community detection**, which groups Pokémon into clusters based on their shared habitats. This highlights how **habitat strongly influences natural groupings** in the Pokémon world.
+
+## 📉 Pokémon t-SNE Plot (Colored by Habitat Communities)
+
+<iframe src="/assets/img/pokemon_tsne_louvain.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+
+This t-SNE visualization displays Pokémon as nodes positioned based on their stat-based similarity, with **colors representing their habitats**. Each point is a Pokémon, and nearby points tend to have similar stats like HP, Attack, Defense, and Speed.
+
+### 🌍 Observations
+
+- **Legendary Pokémon** from the `rare` habitat cluster closely and tend to have **higher base stats**, suggesting that stronger Pokémon are often found in less common environments.
+- Many **Electric** and **Psychic** type Pokémon appear in **urban areas**, forming a distinct habitat-driven cluster.
+- Interestingly, **Pichu** (an Electric type) shows up near **Bug types** like **Weedle** and **Kakuna**, which typically live in forest habitats. This may reflect overlapping stat profiles or evolutionary quirks.
+- Aside from a few such cases, there aren’t many strong cross-habitat relationships visible in this embedding.
+
+This visualization offers a high-level view of how Pokémon types and habitats can influence their stat-based groupings.
+
