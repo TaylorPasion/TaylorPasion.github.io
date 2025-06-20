@@ -63,7 +63,7 @@ Each point in the plot represents a single Pokémon, and you can hover over each
 
 ### 🏞️ Habitat Network (Community Detection)
 
-<iframe src="/assets/img/pokemon_netowrk.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+<iframe src="/assets/img/pokemon_network.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
 
 - In this network, each **node** is a Pokémon, and **edges connect Pokémon that share the same habitat** (e.g., Grassland, Urban, Water’s Edge, Cave, Mountain).
 - This layout produces much **clearer clusters**, allowing us to identify tight communities of Pokémon that live in similar environments.
