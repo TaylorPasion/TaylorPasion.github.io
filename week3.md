@@ -53,7 +53,7 @@ Each point in the plot represents a single Pokémon, and you can hover over each
 
 ### 🧬 Evolution Network
 
-<iframe src="/assets/img/pokemon_evo_network.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+<iframe src="/assets/img/pokemon_evo_network_2.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
 
 - Each **node** represents a Pokémon, and each **edge** represents an evolutionary relationship.
 - Nodes are **colored by type** (e.g., Fire, Water, Psychic).
