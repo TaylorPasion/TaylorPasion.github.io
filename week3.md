@@ -46,3 +46,25 @@ We created embeddings for Pokémon based on core stats such as **HP**, **Attack*
 Unlike other projection methods that may impose artificial structure, **t-SNE** preserves the local relationships in the data, giving us a more authentic view of how Pokémon compare based on their attributes.
 
 Each point in the plot represents a single Pokémon, and you can hover over each point to view its **types**, **abilities**, and **evolution line**.
+
+## 🌐 Pokémon Network Visualizations
+
+---
+
+### 🧬 Evolution Network
+
+<iframe src="/assets/img/pokemon_evo_network.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+
+- Each **node** represents a Pokémon, and each **edge** represents an evolutionary relationship.
+- Nodes are **colored by type** (e.g., Fire, Water, Psychic).
+- While visually interesting, this network is relatively **dense and cluttered**, making it difficult to clearly trace evolutionary paths or uncover meaningful structure.
+
+---
+
+### 🏞️ Habitat Network (Community Detection)
+
+<iframe src="/assets/img/pokemon_netowrk.html" width="100%" height="600" frameborder="0" style="border: 1px solid #ddd; border-radius: 8px;"></iframe>
+
+- In this network, each **node** is a Pokémon, and **edges connect Pokémon that share the same habitat** (e.g., Grassland, Urban, Water’s Edge, Cave, Mountain).
+- This layout produces much **clearer clusters**, allowing us to identify tight communities of Pokémon that live in similar environments.
+- We applied **Louvain community detection**, which groups Pokémon into clusters based on their shared habitats. This highlights how **habitat strongly influences natural groupings** in the Pokémon world.
