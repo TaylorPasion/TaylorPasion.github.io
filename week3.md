@@ -3,6 +3,10 @@ layout: default
 title: "Week 3"
 permalink: /week3/
 ---
+
+# Day 1
+---
+
 ## 🧠 Transformer Model Text Analysis
 
 We implemented a transformer-based large language model (LLM) to analyze text and conversational data.  
@@ -34,6 +38,8 @@ It shows how the transformer learns to summarize long text inputs into concise o
   <img src="https://github.com/user-attachments/assets/b7726e92-bbf8-4500-b049-e0c1c8fbbf41" alt="Conversation Summarization Training" width="900">
 </p>
 
+# Day 2
+---
 
 ## 📊 Pokémon Stat Embedding Visualization
 
@@ -46,6 +52,9 @@ We created embeddings for Pokémon based on core stats such as **HP**, **Attack*
 Unlike other projection methods that may impose artificial structure, **t-SNE** preserves the local relationships in the data, giving us a more authentic view of how Pokémon compare based on their attributes.
 
 Each point in the plot represents a single Pokémon, and you can hover over each point to view its **types**, **abilities**, and **evolution line**.
+
+# Day 3
+---
 
 ## 🌐 Pokémon Network Visualizations
 
