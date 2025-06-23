@@ -4,6 +4,9 @@ title: "Week 1"
 permalink: /week_1/
 ---
 
+# Day 1
+---
+
 ## 🚀 Introduction to GitHub and Website Design
 
 This week, I began building my personal website and learning version control with GitHub. Below are the key milestones from this process:
@@ -77,6 +80,9 @@ I began coding in Jupyter Notebook to run data analysis and test out visualizati
     font-weight: bold;
   }
 </style>
+
+# Day 2
+---
 
 <div align="center">
   <h2 style="margin-top: 1.5em;">🏀 Week 1 Project</h2>
