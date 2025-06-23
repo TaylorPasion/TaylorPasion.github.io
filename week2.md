@@ -4,6 +4,9 @@ title: "Week 2"
 permalink: /week2/
 ---
 
+# Day 1
+---
+
 <style>
   .section-highlight {
     background-color: #f0f8ff;
@@ -73,6 +76,9 @@ What role do opponents play in limiting team performance?
 
 ---
 
+# Day 2
+---
+
 ## 🏀 NBA Playoff Prediction Using Decision Trees
 
 <p align="center">
@@ -118,6 +124,9 @@ To explore what factors contributed to NBA teams making the playoffs, we built a
 - Turnovers
 - Blocks
 
+---
+
+# Day 3
 ---
 
 ## 🧠 Principal Component Analysis (PCA)
