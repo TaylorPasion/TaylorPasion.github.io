@@ -4,15 +4,21 @@ title: "Week 4"
 permalink: /week4/
 ---
 
-## Week 4: Netflix Ratings Analysis
-
-This week, we explored the distribution and patterns in Netflix ratings data. Below are a few key visualizations from our analysis:
+# Week 4: Netflix Ratings Analysis
 
 ---
 
-### Distribution of Titles by Content Rating
+## Day 1
 
-This chart shows the number of titles available on Netflix by their content rating (e.g., PG, PG-13, R). It highlights that **Rated R** titles dominate the platform, while **TV-Y** titles (for very young audiences) are relatively scarce.
+### Overview
+
+This week, we explored patterns in Netflix’s rating data using visualizations and began building a recommender system using a neural network. Below are the highlights and insights from Day 1.
+
+---
+
+### 📊 Distribution of Titles by Content Rating
+
+This chart shows the number of titles available on Netflix by their content rating (e.g., PG, PG-13, R). It highlights that **Rated R** titles dominate the platform, while **TV-Y** titles (intended for very young audiences) are relatively rare.
 
 <p align="center">
   <img src="/assets/img/number_of_titles_vs_rating.png" alt="Distribution of Ratings in Netflix Shared Dataset by Rating" width="1000" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
@@ -20,9 +26,9 @@ This chart shows the number of titles available on Netflix by their content rati
 
 ---
 
-### Movies vs TV Shows by Rating
+### 📺 Movies vs TV Shows by Rating
 
-The graph below displays the distribution of ratings by content type. It reveals that **movies significantly outnumber TV shows** on Netflix.
+This visualization compares the count of movies and TV shows on Netflix. We found that **movies significantly outnumber TV shows**.
 
 <p align="center">
   <img src="/assets/img/distribution_of_ratings.png" alt="Distribution of Ratings in Netflix Shared Dataset by Type" width="1000" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
@@ -30,12 +36,85 @@ The graph below displays the distribution of ratings by content type. It reveals
 
 ---
 
-### Average Ratings of Netflix Titles
+### ⭐ Average Ratings of Netflix Titles
 
-This visualization illustrates the **average user ratings** across different Netflix titles. It helps us understand how well these titles were received by audiences, offering insight into general viewer satisfaction.
+This chart illustrates the **average user ratings** across different Netflix titles. It helps reveal which titles resonated most with viewers.
 
 <p align="center">
   <img src="/assets/img/average_netflix_rating.png" alt="Average Netflix Rating per Title" width="1000" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
 
 ---
+
+## Day 2
+
+### 🏆 Top 50 Highest Rated Movies
+
+The graph below shows the **top 50 highest-rated movies** on Netflix. _Miss Congeniality_ tops the list with over 200,000 total user rating points. The 50th-ranked film, _Bringing Down the House_, still received an impressive ~120,000 total points. Each title's score reflects the total sum of user ratings.
+
+<p align="center">
+  <img src="/assets/img/top_50_movies.png" alt="Top 50 Rated Netflix Movies" width="1000" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
+
+---
+
+### 🧠 Building a Neural Network Recommender System
+
+We created a neural network that predicts whether a user would enjoy a movie based on two inputs:
+
+- **User ID** (Input A)
+- **Movie ID** (Input B)
+
+The model learns from how each user rated previous movies and how each movie was rated by others. Based on that, it generates a prediction for how a user would rate a new movie.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/843cf9b0-4bdd-4916-96d5-43579077f17d" alt="Neural Network Diagram" width="600" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
+
+---
+
+### 🧮 Model Architecture Summary
+Input A (input_layer_8) ───────────────┐ This is an input of the user number.
+                                       │
+                             ┌─────────▼──────────┐
+                             │ Embedding (200-d)  │  ← vocab_size = 10,000  -> Our model generates an embedding from the ratings that user number rated movies with.
+                             └─────────┬──────────┘
+                                       │
+                            ┌──────────▼──────────┐
+                            │   Reshape (200,)    │ -> We reshape the user embedding so that we can compare it to the embedding of a movie.
+                            └──────────┬──────────┘
+                                       │
+                                       │
+Input B (input_layer_9) ───────────────┐ Here is where we input the movie number. Each movie was given a rating of 1-5 by over 10,000 netflix user.
+                                       │
+                             ┌─────────▼──────────┐
+                             │ Embedding (200-d)  │  ← vocab_size = 2,000 -> Again, our model takes the movie number and generates an embedding based off the ratings users                                                                               gave that movie.
+                             └─────────┬──────────┘
+                                       │
+                            ┌──────────▼──────────┐
+                            │   Reshape (200,)    │ -> Here our model reshapes the embedding to be the same shape as our user embedding so we can compute a dot product.
+                            └──────────┬──────────┘
+                                       │
+         ┌─────────────────────────────▼────────────────────────────┐
+         │                 Dot Product (dot_4 → shape=(1,))          │ -> The dot product compares the user and movie embeddings and produces a number that represents if                                                                         |      the user and the movie are a good match. A good match is represented by a high dot product and                                                                                is determined both by what other movies the user liked and how other users rated the movie.
+         └─────────────────────────────┬────────────────────────────┘
+                                       │
+             ┌────────────────────────▼────────────────────────┐
+             │ Concatenate([reshape_8, reshape_9, dot_4])      │  → shape = (401,)  -> Here we combine the user embedding with the movie embedding and the dot product.
+             └────────────────────────┬────────────────────────┘
+                                       │
+                         ┌────────────▼────────────┐
+                         │     Dropout (rate=0.X)   │  -> This component of our model learns patterns from the combined embedding of our user movie and dot product.
+                         └────────────┬────────────┘
+                                       │
+                          ┌───────────▼───────────┐
+                          │ Dense (401 → 256)     │  ← ReLU  -> ReLU stands for rectified linear unit. this component determines if the patterns learned in the last                                                                         component improve our model's overall understanding of relationships between movies and users. This is                                                                       important to ignoring outliers or relationships that are not representative of rating trends.
+                          └───────────┬───────────┘
+                                       │
+                         ┌────────────▼────────────┐
+                         │     Dropout (rate=0.X)   │ -> We have another drop out layer to make sure that our model is learning from the strong user/ movie relationships.
+                         └────────────┬────────────┘
+                                       │
+                          ┌───────────▼───────────┐
+                          │ Dense (256 → 1)       │  ← Output (e.g., regression)  -> This last layer takes the information learned and outputs a prediction for what a user                                                                                       will rate a movie. The model compares the prediction to our observed data and self                                                                                             corrects.
+                          └───────────────────────┘
