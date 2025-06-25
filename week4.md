@@ -15,7 +15,7 @@ This week, we explored the distribution and patterns in Netflix ratings data. Be
 This chart shows the number of titles available on Netflix by their content rating (e.g., PG, PG-13, R). It highlights that **Rated R** titles dominate the platform, while **TV-Y** titles (for very young audiences) are relatively scarce.
 
 <p align="center">
-  <img src="/assets/img/number_of_titles_vs_ratinghighest_lowest_scoring_teams.png" alt="Distribution of Ratings in Netflix Shared Dataset by Rating" width="1000" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="/assets/img/number_of_titles_vs_rating.png" alt="Distribution of Ratings in Netflix Shared Dataset by Rating" width="1000" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
 
 ---
