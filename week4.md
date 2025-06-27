@@ -74,47 +74,12 @@ The model learns from how each user rated previous movies and how each movie was
 ---
 
 ### 🧮 Model Architecture Summary
-Input A (input_layer_8) ───────────────┐ This is an input of the user number.
-                                       │
-                             ┌─────────▼──────────┐
-                             │ Embedding (200-d)  │  ← vocab_size = 10,000  -> Our model generates an embedding from the ratings that user number rated movies with.
-                             └─────────┬──────────┘
-                                       │
-                            ┌──────────▼──────────┐
-                            │   Reshape (200,)    │ -> We reshape the user embedding so that we can compare it to the embedding of a movie.
-                            └──────────┬──────────┘
-                                       │
-                                       │
-Input B (input_layer_9) ───────────────┐ Here is where we input the movie number. Each movie was given a rating of 1-5 by over 10,000 netflix user.
-                                       │
-                             ┌─────────▼──────────┐
-                             │ Embedding (200-d)  │  ← vocab_size = 2,000 -> Again, our model takes the movie number and generates an embedding based off the ratings users                                                                               gave that movie.
-                             └─────────┬──────────┘
-                                       │
-                            ┌──────────▼──────────┐
-                            │   Reshape (200,)    │ -> Here our model reshapes the embedding to be the same shape as our user embedding so we can compute a dot product.
-                            └──────────┬──────────┘
-                                       │
-         ┌─────────────────────────────▼────────────────────────────┐
-         │                 Dot Product (dot_4 → shape=(1,))          │ -> The dot product compares the user and movie embeddings and produces a number that represents if                                                                         |      the user and the movie are a good match. A good match is represented by a high dot product and                                                                                is determined both by what other movies the user liked and how other users rated the movie.
-         └─────────────────────────────┬────────────────────────────┘
-                                       │
-             ┌────────────────────────▼────────────────────────┐
-             │ Concatenate([reshape_8, reshape_9, dot_4])      │  → shape = (401,)  -> Here we combine the user embedding with the movie embedding and the dot product.
-             └────────────────────────┬────────────────────────┘
-                                       │
-                         ┌────────────▼────────────┐
-                         │     Dropout (rate=0.X)   │  -> This component of our model learns patterns from the combined embedding of our user movie and dot product.
-                         └────────────┬────────────┘
-                                       │
-                          ┌───────────▼───────────┐
-                          │ Dense (401 → 256)     │  ← ReLU  -> ReLU stands for rectified linear unit. this component determines if the patterns learned in the last                                                                         component improve our model's overall understanding of relationships between movies and users. This is                                                                       important to ignoring outliers or relationships that are not representative of rating trends.
-                          └───────────┬───────────┘
-                                       │
-                         ┌────────────▼────────────┐
-                         │     Dropout (rate=0.X)   │ -> We have another drop out layer to make sure that our model is learning from the strong user/ movie relationships.
-                         └────────────┬────────────┘
-                                       │
-                          ┌───────────▼───────────┐
-                          │ Dense (256 → 1)       │  ← Output (e.g., regression)  -> This last layer takes the information learned and outputs a prediction for what a user                                                                                       will rate a movie. The model compares the prediction to our observed data and self                                                                                             corrects.
-                          └───────────────────────┘
+
+<p align="center">
+  <img src="/assets/img/modeL_summary.png" 
+       alt="Model Architecture Summary" 
+       width="1000" 
+       style="border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.2); margin: 20px 0;" />
+</p>
+
+This visual summarizes the architecture of our neural network recommender system. The model takes in two inputs—**user ID** and **movie ID**—and passes them through embedding layers. These embeddings are compared using a dot product and concatenated before passing through multiple dense layers. The final output is a **predicted rating score**, representing how much the model thinks the user would enjoy the movie.
