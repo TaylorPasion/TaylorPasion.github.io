@@ -112,3 +112,22 @@ We interpret this as the model performing best at **epoch 4**, with diminishing 
 
 **Final Performance:**  
 🧪 The model achieved **82% accuracy** on a held-out **test set of ~20,000 samples**, showing strong generalization on unseen data.
+
+
+### 🎯 Predicted Genre Preferences – User 808
+
+The graph below shows the **median predicted rating** for user **808**, broken down by genre. We used our trained model to infer which genres this user would most likely enjoy.
+
+<p align="center">
+  <img src="/assets/img/predicted_rating.png" 
+       alt="Predicted Ratings by Genre for User 808" 
+       width="1000" 
+       style="border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.2); margin: 20px 0;" />
+</p>
+
+Based on the results:
+
+- 🧟‍♀️ **Horror** was the highest-rated genre, suggesting this user has a strong preference for scary or suspenseful content.
+- 🎬 **Action** received the lowest median rating, indicating it may not align with the user's viewing preferences.
+
+This approach highlights how we can **personalize recommendations** by analyzing predicted ratings across genre categories—offering a more targeted and meaningful viewing experience.
