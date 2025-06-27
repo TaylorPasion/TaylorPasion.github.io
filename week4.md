@@ -83,3 +83,32 @@ The model learns from how each user rated previous movies and how each movie was
 </p>
 
 This visual summarizes the architecture of our neural network recommender system. The model takes in two inputs—**user ID** and **movie ID**—and passes them through embedding layers. These embeddings are compared using a dot product and concatenated before passing through multiple dense layers. The final output is a **predicted rating score**, representing how much the model thinks the user would enjoy the movie.
+
+---
+
+# Day 3
+
+---
+### 📉 Model Training Evaluation
+
+Today, we evaluated the performance of our neural network model after training it for **5 epochs**.
+
+<p align="center">
+  <img src="/assets/img/training_loss.png" 
+       alt="Training and Validation Loss" 
+       width="1000" 
+       style="border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.2); margin: 20px 0;" />
+</p>
+
+The plot above shows the **training and validation loss** over each epoch:
+
+- ✅ **Training loss** steadily declined across all 5 epochs.
+- ⭐ **Validation loss** reached its lowest point at **epoch 4**.
+- ⚠️ A slight increase in validation loss during epoch 5 suggests potential **overfitting**.
+
+We interpret this as the model performing best at **epoch 4**, with diminishing returns (and slight overtraining) thereafter.
+
+---
+
+**Final Performance:**  
+🧪 The model achieved **82% accuracy** on a held-out **test set of ~20,000 samples**, showing strong generalization on unseen data.
