@@ -76,7 +76,7 @@ The model learns from how each user rated previous movies and how each movie was
 ### 🧮 Model Architecture Summary
 
 <p align="center">
-  <img src="/assets/img/model_summary.png" 
+  <img src="/assets/img/model_summary.html" 
        alt="Model Architecture Summary" 
        width="1000" 
        style="border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.2); margin: 20px 0;" />
